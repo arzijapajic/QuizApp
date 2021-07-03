@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/group1">
+        <item android:id="@+id/kvizovi"
+            android:title="Kvizovi"
+            />
+        <item android:id="@+id/predmeti"
+            android:title="Predmeti"
+            />
+    </group>
+
+    <group android:id="@+id/group2"
+        android:visible="false">
+        <item android:id="@+id/predajKviz"
+            android:title="Predaj Kviz"
+            />
+        <item android:id="@+id/zaustaviKviz"
+            android:title="Zaustavi Kviz"
+            />
+    </group>
+</menu>

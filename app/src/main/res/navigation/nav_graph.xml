@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/kvizovi">
+
+    <fragment
+        android:id="@+id/predmeti"
+        android:name="ba.etf.rma21.projekat.ui.predmeti.FragmentPredmeti"
+        android:label="FragmentPredmeti" >
+        <action
+            android:id="@+id/action_fragmentPredmeti_to_fragmentPoruka"
+            app:destination="@id/nav_poruka"
+            app:popUpTo="@id/kvizovi"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/kvizovi"
+        android:name="ba.etf.rma21.projekat.ui.kvizovi.FragmentKvizovi"
+        android:label="FragmentKvizovi" >
+        <action
+            android:id="@+id/action_fragmentKvizovi_to_fragmentPredmeti"
+            app:destination="@id/predmeti" />
+        <action
+            android:id="@+id/action_nav_kvizovi_to_fragmentPokusaj"
+            app:destination="@id/fragmentPokusaj" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_poruka"
+        android:name="ba.etf.rma21.projekat.ui.poruka.FragmentPoruka"
+        android:label="fragment_poruka"
+        tools:layout="@layout/fragment_poruka" >
+        <argument
+            android:name="text"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentPokusaj"
+        android:name="ba.etf.rma21.projekat.ui.pokusaj.FragmentPokusaj"
+        android:label="FragmentPokusaj" >
+        <argument
+            android:name="pitanja"
+            app:argType="ba.etf.rma21.projekat.data.models.Pitanje[]" />
+    </fragment>
+</navigation>

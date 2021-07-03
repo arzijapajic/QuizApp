@@ -1,0 +1,24 @@
+GET
+https://rma21-etf.herokuapp.com/predmet
+
+
+
+
+%%%
+# Duration: 1403 ms
+# GET
+# https://rma21-etf.herokuapp.com/predmet
+
+
+# status 200
+
+@Server: Cowboy
+@Connection: keep-alive
+@X-Powered-By: Express
+@Content-Type: application/json; charset=utf-8
+@Content-Length: 225
+@Etag: W/"e1-Aq4bG6DrtwpgCWv7tvjqXCiT9Pc"
+@Date: Mon, 24 May 2021 10:35:31 GMT
+@Via: 1.1 vegur
+
+[{"id":1,"naziv":"RMA","godina":2,"createdAt":"2021-05-20T15:10:26.552Z","updatedAt":"2021-05-20T15:10:26.552Z"},{"id":2,"naziv":"IM1","godina":1,"createdAt":"2021-05-20T15:10:26.849Z","updatedAt":"2021-05-20T15:10:26.849Z"}]
